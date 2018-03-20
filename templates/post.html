@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+    <a href="{% url 'big_main' %}?title=Главная&desc=Описание">Главная</a>
+
+    <h4>{{ post_title }}</h4>
+    <h4>{{ post_desc }}</h4>
+
+    <form action="{% url 'big_main' %}">
+        <input type="text" name="title">
+        <input type="text" name="desc">
+        <input type="submit">
+    </form>
+</body>
+</html>
